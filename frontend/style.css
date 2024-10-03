@@ -151,22 +151,35 @@ h1{
 }
 
 
-.technologie{
+.contain-techno {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligne le texte et les images en haut */
+}
+
+.technologie {
     font-family: TekturNarrow-Bold;
     font-size: 20px;
     color: white;
     margin-left: 180px;
     text-align: left;
     width: 35%;
-    float: left;
+    margin-top: 100px;
 }
 
-.cyber{
-    width: 30%;
-    float: right; /* Aligne l'image à droite */
+.img-cyber {
+    display: flex;
+    flex-direction: column; /* Pour empiler les images verticalement */
+    align-items: center; /* Centre les images horizontalement */
     margin-right: 180px;
-
 }
+
+.cyber {
+    width: 800px; /* Assure que les images ont la même largeur que la div */
+    margin-bottom: 20px; /* Ajoute de l'espace entre les images */
+}
+
+
 
 img.overclock {
     float: left; /* Fait flotter l'image à gauche */
@@ -184,7 +197,51 @@ img.overclock {
     color: white;
 }
 
+.container-amd{
+    display: flex;
+    justify-content: space-between;
+}
+.amd-img{
+    max-width: 800px;
+}
+.tableau{
+    display: flex;
 
+    justify-content: center;
+}
+
+.text-amd{
+    width: 500px;
+    height: 400px;
+    margin-top: 40px;
+    margin-right: 300px;
+    margin-bottom: 70px;
+    color: white;
+    font-family: TekturNarrow-Bold;
+    font-size: 20px;
+
+}
+
+.contain-overclock {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligne le texte et l'image en haut */
+    margin: 30px;
+}
+
+.overclock {
+    min-width: 700px; /* Ajuste la largeur de l'image */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+
+.text-overclock {
+    font-family: TekturNarrow-Bold;
+    font-size: 18px;
+    color: white;
+    width: 50%; /* Ajuste la largeur du texte */
+    text-align: left;
+    margin-top: 60px;
+}
 
 
 
@@ -207,3 +264,6 @@ img.overclock {
     border-radius: 30px;
     background-color: green;
 }
+
+
+
