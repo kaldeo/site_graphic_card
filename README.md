@@ -2,7 +2,7 @@
 
 Voici un sujet de veille sur le sujet des cartes graphiques. 
 
-Il est possible que j'apporte des améliorations aux fichier dans le temps. 
+Il est possible que j'apporte des améliorations aux fichiers dans le temps. 
 
 # Installation
 
