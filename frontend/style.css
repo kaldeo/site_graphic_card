@@ -251,7 +251,8 @@ img.overclock {
 /* Page articles */
 .contain-article{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 section{
     background-color: rgb(24, 24, 24);
@@ -268,6 +269,7 @@ section{
     text-align: center;
     margin-top: 20px;
 }
+
 h4{
     font-family: TekturNarrow-Bold;
     color: white;
@@ -276,6 +278,30 @@ h4{
     right: 10px; /* Distance du bord droit */
     margin: 0; /* Supprime les marges par défaut */
 }
+button{
+    width: 7%;
+    height: 30px;
+    position: absolute; /* Permet de le positionner par rapport au parent */
+    bottom: 10px; /* Distance du bas de la section */
+    left: 10px; /* Distance du bord droit */
+    margin: 0; /* Supprime les marges par défaut */
+    font-family: TekturNarrow-Bold;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+section img{
+    display: none;
+    width: 30px;
+}
+@media (max-width: 1640px) {
+    button span {
+        display: none; /* Cacher le texte si l'écran est trop petit */
+    }
 
-
-
+    section img {
+        display: inline-block; /* Montrer l'icône */
+    }
+}
