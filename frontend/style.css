@@ -29,13 +29,15 @@ a {
     border: none; /* Supprime les bordures par défaut */
     display: inline-block; /* Assure que le lien se comporte comme un bloc en ligne pour l'image */
 }
-
 .card, .screen{
     max-width: 60px; /* Ajuste la taille si nécessaire */
     margin-left: 10px; /* Espace entre les images */
 
 }
-
+.header-right{
+    display: flex;
+    align-items: center;
+}
 
 .barre-blanche {
     height: 1px; /* Ajuste la hauteur de la barre */
@@ -246,23 +248,33 @@ img.overclock {
 
 
 
-
-
-
-
-/* Page 2 */
-
-.container_nvidia{
-    display: flex; /* Utilise flexbox pour aligner les éléments en ligne */
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+/* Page articles */
+.contain-article{
+    display: flex;
+    justify-content: space-around;
 }
-.box_nvidia{
-    width: 200px;
-    height: 100px;
-    border-radius: 30px;
-    background-color: green;
+section{
+    background-color: rgb(24, 24, 24);
+    width: 90%;
+    min-height: 300px;
+    margin-top: 40px;
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+}
+.text-article{
+    font-family: TekturNarrow-Bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+h4{
+    font-family: TekturNarrow-Bold;
+    color: white;
+    position: absolute; /* Permet de le positionner par rapport au parent */
+    bottom: 10px; /* Distance du bas de la section */
+    right: 10px; /* Distance du bord droit */
+    margin: 0; /* Supprime les marges par défaut */
 }
 
 
